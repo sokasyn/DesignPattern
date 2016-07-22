@@ -39,7 +39,9 @@ public class RegisterSingletonProTest {
         config1.setName("Sokasyn");
         config1.setVersion(200);
         RegisterSingletonPro instance1 = RegisterSingletonPro.create(config1);
-        debug("config1:" + config1);
+        debug("new config1:" + config1);
+
+        debug("instance1.config:" + instance1.getConfig());
         debug("instance1:" + instance1);
         debug("instance1 version:" + instance1.getConfig().getVersion());
     }
