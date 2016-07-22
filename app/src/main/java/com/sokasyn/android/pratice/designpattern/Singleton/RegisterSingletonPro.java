@@ -11,6 +11,11 @@ import java.util.HashMap;
  * 这种情况,可以将参数封装成一个对象,使得 getInstance 和私有构造方法的参数一致,
  * 不过对于用户来讲,他关注的则是传入的参数及个数,所以对外提供的创建方法重载
  *
+ * 待解决问题：
+ * 单例创建之后,就算改变config,只要key不变，那么获取的instance不会改变
+ * 期望：
+ * 通过config的改变，能够对instance做出一些相应的操作，如version的升级,instance能做出升级的动作
+ *
  */
 public class RegisterSingletonPro {
 
